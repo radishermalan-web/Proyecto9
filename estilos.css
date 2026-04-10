@@ -1,0 +1,302 @@
+body{               /*CSS a grid version 2*/
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #444;
+}
+
+.inicio{
+    background: linear-gradient(to left, #ababab 10%, #444 59%, #444444 29%);
+    padding: 1px;
+}
+.inicioTitulo{
+    display: flex;
+}
+
+.inicioTitulo>i{
+    margin-left: 40px;
+    font-size: 10vw;
+    color: #13fbff;
+}
+#tituloInicio{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 60px;
+    color: rgb(89, 230, 255);
+    margin-left: 50px;
+}
+.inicio>h2{
+    color: white;
+}
+.inicio>i{
+    font-size: 13vw;
+    color: #78e15e;
+}
+.navegacion{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #444;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.botonNav>a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    transition: 0.2s ease;
+}
+
+.botonNav{
+    transition: 0.2s ease;
+}
+.botonNav>a>i{
+    margin-left: 10px;
+}
+.botonNav>a:hover{
+    color: #1db7ff;
+    transition: 0.5s ease;
+}
+.botonNav:hover{
+    transform: scale(1.10);
+    transition: 0.5s ease;
+}
+
+.tienda{
+    border-radius: 30px;
+    margin: 40px;
+    height: fit-content;
+    background-color: #ffffff;
+}
+#tituloTienda{
+    font-size: 40px;
+}
+.descripcion{
+    border-radius: 30px;
+    background-color: #bfbfbf;
+    margin: 20px;
+}
+.descripcion>h2{
+    font-size: 20px;
+    margin: 30px;
+    font-weight: lighter;
+    padding: 30px;
+}
+.productos{
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: grid;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.productoImagen>img{
+    width: 40vh;
+    border-radius: 30px;
+}
+.productoImagen{
+    justify-self: center;
+    margin: 30px;
+}
+.producto{
+    border-radius: 30px;
+    width: 50vh;
+    margin-top: 30px;
+    background-color: white;
+    border: 2px;
+    border-style: solid;
+    transition: 0.3s;
+    margin-bottom: 30px;
+
+}
+.productosTitulo{
+    color: white;
+    display: flex;
+    margin: 30px;
+}
+.productoTitulo>h2{
+    font-size: 50px;
+}
+.productosTitulo>i{
+    margin-top: 30px;
+    font-size: 60px;
+    margin-left: 40px;
+}
+.producto>h2{
+    text-align: center;
+    font-size: 40px;
+}
+.producto>h4{
+    text-align: center;
+}
+.precio{
+    margin: 30px;
+}
+.producto:hover{
+    background-color: #ffda60;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.local{
+    background-color: #ffffff;
+
+}
+.galeria{
+    border-radius: 30px;
+    margin: 20px;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 60vh;
+}
+#TituloLocal{
+    font-size: 40px;
+    margin: 30px;
+    color: white;
+}
+.seccionSeparada{
+    border-radius: 30px;
+    margin: 40px;
+    padding: 20px;
+    background-color: #725248;
+}
+.testimonios{
+    margin: 20px;
+    gap: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    flex-wrap: wrap;
+}
+.test{
+    background-color: #6cc46a;
+    border-radius: 20px;
+}
+.testCuerpo{
+    margin: 15px;
+    background-color: #529551;
+    padding: 50px;
+    border-radius: 20px;
+}
+.testTitulo{
+    background-color: #466e45;
+    padding: 1px;
+    border-radius: 20px;
+}
+.reviewsTest{
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.testContenido{
+    border-radius: 30px;
+    background-color: #466e45;
+}
+.testContenido>h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.seccionSeparada>h2{
+    margin: 30px;
+    font-size: 40px;
+    color: white;
+}
+.trabajadores{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.trabajadorTarjeta{
+    background-color: #a86060;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.trabajadorTitulo{
+    background-color: #834343;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    color: white;
+}
+.trabajadorTitulo>i{
+    font-size: 70px;
+    margin-left: 20px;
+    color: white;
+}
+.descripcionTrabajador{
+    padding: 30px;
+    font-size: 20px;
+}
+.contactosTrabajador{
+    align-items: center;
+    text-align: center;
+    background-color: #834343;
+    display: flex;
+    border-radius: 20px;
+}
+.red>img{
+    width: 70%;
+}
+.red:hover{
+    transform: scale(1.10);
+    transition: 0.4s ease;
+    background-color: white;
+    border-radius: 10px;
+}
+.red{
+    transition: 0.4s ease;
+    width: 100%;
+    margin: 10px;
+}
+.trabajadores{
+    background-color: #725248;
+
+    margin: 30px;
+    border-radius: 20px;
+}
+.trabajadoresTitulo{
+    background-color: #725248;
+
+    padding: 10px;
+    margin: 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+.navegacion2{
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+    background-color: #444444a0;
+}
+.botonNav2{
+    padding: 30px;
+    transition: 0.2s;
+}
+.botonNav2>a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.botonNav2:hover{
+    background-color: #466e45;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.destacado{
+    display: flex;
+    gap: 10px;
+    place-self: center;
+    flex-wrap: wrap;
+}
